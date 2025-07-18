@@ -145,6 +145,7 @@ function generateCardHTML(imagePath, name, description, isActive, i) {
               <div class="flex flex-row items-center justify-between">
                 <button
                   class="remove-btn rounded-full text-preset-6 text-neutral900 px-4 py-2 outline outline-1 outline-neutral200 hover:bg-red700 hover:text-neutral0 hover:outline-none dark:text-neutral0 dark:outline-neutral600 hover:dark:text-neutral900 hover:dark:bg-red400 hover:dark:outline-none"
+                  aria-label="Remove extension"
                 >
                   Remove
                 </button>
@@ -153,6 +154,7 @@ function generateCardHTML(imagePath, name, description, isActive, i) {
                   class="toggle-btn w-[2.25rem] h-[1.25rem] rounded-full bg-neutral300 transition-all duration-300 flex items-center px-[0.15rem] ${
                       isActive && states.theme === "light" ? "bg-red700" : ""
                   } ${isActive && states.theme === "dark" ? "bg-red400" : ""} " 
+                  aria-label="Toggle extension"
                 >
                   <span
                     class="toggle-btn-circle left-1 w-4 h-4 bg-white rounded-full transition-all duration-300 ${
